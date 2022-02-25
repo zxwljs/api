@@ -1,6 +1,6 @@
 # 叮当API
 
-[主页api.1ove.icu](api.1ove.icu)
+[主页api.1ove.icu](http://api.1ove.icu)
 
 
 
