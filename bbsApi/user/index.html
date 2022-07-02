@@ -230,6 +230,18 @@
   
 
           
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ApiList/pure/" class="md-nav__link">
+        美腿图
+      </a>
+    </li>
+  
+
+          
         </ul>
       </nav>
     </li>
@@ -312,9 +324,86 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          随机用户
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         随机用户
       </a>
+      
+        
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    请求
+  </a>
+  
+    <nav class="md-nav" aria-label="请求">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#url" class="md-nav__link">
+    URL
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    方式
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    响应
+  </a>
+  
+    <nav class="md-nav" aria-label="响应">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    参数说明
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    示例
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -492,6 +581,68 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    请求
+  </a>
+  
+    <nav class="md-nav" aria-label="请求">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#url" class="md-nav__link">
+    URL
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    方式
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    响应
+  </a>
+  
+    <nav class="md-nav" aria-label="响应">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    参数说明
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    示例
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -504,7 +655,191 @@
                 
                 
                 <h1 id="_1">随机生成用户信息</h1>
-<p>开发中</p>
+<p>随机生成一个包含用户名、头像、年龄、性别、标识id等信息的虚拟用户，可用于抽奖中奖名单，在线用户等场景。</p>
+<h2 id="_2">请求</h2>
+<h3 id="url">URL</h3>
+<p><code>https://c9aa2c19-16c5-4624-82fb-5fbf20fefb06.bspapp.com/sample?method=user&amp;count=10</code></p>
+<h3 id="_3">方式</h3>
+<p><code>GET</code></p>
+<table>
+<thead>
+<tr>
+<th>名称</th>
+<th>类型</th>
+<th>说明</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>method</td>
+<td>str</td>
+<td>固定参数</td>
+<td>user</td>
+</tr>
+<tr>
+<td>count</td>
+<td>num</td>
+<td>必填,区间（1，100]</td>
+<td>需要返回多少条内容</td>
+</tr>
+</tbody>
+</table>
+<h2 id="_4">响应</h2>
+<h3 id="_5">参数说明</h3>
+<table>
+<thead>
+<tr>
+<th>名称</th>
+<th>类型</th>
+<th>说明</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>code</td>
+<td>num</td>
+<td>0响应成功</td>
+<td>状态代码</td>
+</tr>
+<tr>
+<td>msg</td>
+<td>String</td>
+<td>返回内容</td>
+<td>success为成功</td>
+</tr>
+<tr>
+<td>doc</td>
+<td>String</td>
+<td>文档地址</td>
+<td>文档地址</td>
+</tr>
+<tr>
+<td>data</td>
+<td>Array</td>
+<td>数据</td>
+<td>虚拟用户数据</td>
+</tr>
+<tr>
+<td>-_id</td>
+<td>num</td>
+<td>用户id</td>
+<td></td>
+</tr>
+<tr>
+<td>-userID</td>
+<td>num</td>
+<td>用户id</td>
+<td></td>
+</tr>
+<tr>
+<td>-nick</td>
+<td>str</td>
+<td>用户名</td>
+<td></td>
+</tr>
+<tr>
+<td>-avatar</td>
+<td>str</td>
+<td>头像</td>
+<td></td>
+</tr>
+<tr>
+<td>-gender</td>
+<td>nmu</td>
+<td>性别 1男性 2女性</td>
+<td></td>
+</tr>
+<tr>
+<td>-age</td>
+<td>num</td>
+<td>年龄</td>
+<td></td>
+</tr>
+<tr>
+<td>-more</td>
+<td>其它</td>
+<td>其它请自行分析</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="_6">示例</h3>
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+    <span class="nt">&quot;code&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+    <span class="nt">&quot;msg&quot;</span><span class="p">:</span> <span class="s2">&quot;success&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;doc&quot;</span><span class="p">:</span> <span class="s2">&quot;http://api.1ove.icu&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;data&quot;</span><span class="p">:</span> <span class="p">[</span>
+        <span class="p">{</span>
+            <span class="nt">&quot;_id&quot;</span><span class="p">:</span> <span class="mi">5776991</span><span class="p">,</span>
+            <span class="nt">&quot;userID&quot;</span><span class="p">:</span> <span class="mi">5776991</span><span class="p">,</span>
+            <span class="nt">&quot;nick&quot;</span><span class="p">:</span> <span class="s2">&quot;花使者&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;avatar&quot;</span><span class="p">:</span> <span class="s2">&quot;http://cdn.u1.huluxia.com/g4/M01/F7/DD/rBAAdmJ5qTaAQNEfAAFOnM60Lr4326.jpg&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;gender&quot;</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span>
+            <span class="nt">&quot;age&quot;</span><span class="p">:</span> <span class="mi">18</span><span class="p">,</span>
+            <span class="nt">&quot;role&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+            <span class="nt">&quot;experience&quot;</span><span class="p">:</span> <span class="mi">91085</span><span class="p">,</span>
+            <span class="nt">&quot;credits&quot;</span><span class="p">:</span> <span class="mi">15</span><span class="p">,</span>
+            <span class="nt">&quot;identityTitle&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;identityColor&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+            <span class="nt">&quot;level&quot;</span><span class="p">:</span> <span class="mi">8</span><span class="p">,</span>
+            <span class="nt">&quot;levelColor&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+            <span class="nt">&quot;integral&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+            <span class="nt">&quot;uuid&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+            <span class="nt">&quot;integralNick&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+            <span class="nt">&quot;signature&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+            <span class="nt">&quot;medalList&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+            <span class="nt">&quot;nickColor&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+            <span class="nt">&quot;nightNickColor&quot;</span><span class="p">:</span> <span class="kc">null</span>
+        <span class="p">},</span>
+        <span class="p">{</span>
+            <span class="nt">&quot;_id&quot;</span><span class="p">:</span> <span class="mi">25908044</span><span class="p">,</span>
+            <span class="nt">&quot;userID&quot;</span><span class="p">:</span> <span class="mi">25908044</span><span class="p">,</span>
+            <span class="nt">&quot;nick&quot;</span><span class="p">:</span> <span class="s2">&quot;Kirito丶。&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;avatar&quot;</span><span class="p">:</span> <span class="s2">&quot;http://cdn.u1.huluxia.com/g4/M01/F5/77/rBAAdmDgneSAUg5cAADScjpSpco248.jpg&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;gender&quot;</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span>
+            <span class="nt">&quot;age&quot;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+            <span class="nt">&quot;role&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+            <span class="nt">&quot;experience&quot;</span><span class="p">:</span> <span class="mi">1830</span><span class="p">,</span>
+            <span class="nt">&quot;credits&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+            <span class="nt">&quot;identityTitle&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;identityColor&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+            <span class="nt">&quot;level&quot;</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span>
+            <span class="nt">&quot;levelColor&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+            <span class="nt">&quot;integral&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+            <span class="nt">&quot;uuid&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+            <span class="nt">&quot;integralNick&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+            <span class="nt">&quot;signature&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+            <span class="nt">&quot;medalList&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+            <span class="nt">&quot;nickColor&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+            <span class="nt">&quot;nightNickColor&quot;</span><span class="p">:</span> <span class="kc">null</span>
+        <span class="p">},</span>
+        <span class="p">{</span>
+            <span class="nt">&quot;_id&quot;</span><span class="p">:</span> <span class="mi">13457934</span><span class="p">,</span>
+            <span class="nt">&quot;userID&quot;</span><span class="p">:</span> <span class="mi">13457934</span><span class="p">,</span>
+            <span class="nt">&quot;nick&quot;</span><span class="p">:</span> <span class="s2">&quot;树欲静.&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;avatar&quot;</span><span class="p">:</span> <span class="s2">&quot;http://cdn.u1.huluxia.com/g4/M03/12/41/rBAAdmKTljqAfh70AAF_JylFC-o359.jpg&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;gender&quot;</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span>
+            <span class="nt">&quot;age&quot;</span><span class="p">:</span> <span class="mi">22</span><span class="p">,</span>
+            <span class="nt">&quot;role&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+            <span class="nt">&quot;experience&quot;</span><span class="p">:</span> <span class="mi">46890</span><span class="p">,</span>
+            <span class="nt">&quot;credits&quot;</span><span class="p">:</span> <span class="mi">47</span><span class="p">,</span>
+            <span class="nt">&quot;identityTitle&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;identityColor&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+            <span class="nt">&quot;level&quot;</span><span class="p">:</span> <span class="mi">7</span><span class="p">,</span>
+            <span class="nt">&quot;levelColor&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+            <span class="nt">&quot;integral&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+            <span class="nt">&quot;uuid&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+            <span class="nt">&quot;integralNick&quot;</span><span class="p">:</span> <span class="s2">&quot;初入门槛&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;signature&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+            <span class="nt">&quot;medalList&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+            <span class="nt">&quot;nickColor&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+            <span class="nt">&quot;nightNickColor&quot;</span><span class="p">:</span> <span class="kc">null</span>
+        <span class="p">}</span>
+    <span class="p">]</span>
+<span class="p">}</span>
+</code></pre></div>
                 
               
               
